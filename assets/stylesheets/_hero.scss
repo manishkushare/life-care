@@ -1,0 +1,122 @@
+
+.hero {
+    position: relative;
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(240, 230, 230)) ,url(../media/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // height: 100vh;
+    
+}
+.hero-grid-container {
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.hero-content {
+    h1{
+        font-size: 3rem;
+        font-weight: 700;    
+    }
+    h2,h3 {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        font-weight: 600;
+        // text-align: center;
+    }
+    span {
+        color: green;
+        font-weight: bolder;
+        margin-left: 0.5rem;
+    }
+    
+}
+
+.wrapper {
+    background-color: green;
+    display: grid;
+    text-transform: capitalize;
+    align-content: center;
+    justify-content: center;
+    color: #ffffff;
+    .wrapper-legend {
+        // display: grid;
+        justify-self: center;
+        border-bottom: 5px solid yellowgreen;
+        padding: 1.5rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 600;
+        i{
+        margin-right: 0.5rem;
+        }
+    }
+}
+
+.wrapper-timing{
+    padding: 1.5rem 0;
+    .weekdays,.weekend{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-bottom: 1px solid white;
+        padding: 1rem 0;
+        h2 {
+            justify-self: left;
+        }
+        h3{
+            justify-self: right;
+        }
+    }
+   
+}
+
+.wrapper-contact {
+    padding: 1.5rem 0;
+    display: grid;
+    // justify-content: center;
+    justify-content: center;
+    // border: 2px solid black;
+    h2,a {
+        justify-self: center;
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+}
+
+
+.service {
+    background-color: greenyellow;
+    height: 1500px;
+}
+
+
+@media all and (max-width: 768px) {
+
+    .hero-grid-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .hero-content {
+        padding: 7.5rem 1.5rem 3rem 1.5rem;
+    }
+}
+
+@media all and (max-width:1024px) and (min-width: 770px) {
+    .hero {
+        .hero-grid-container {
+            padding: 10rem 2rem !important;
+        }
+    }
+    .wrapper-timing {
+        padding: 1.5rem 1rem;
+    }
+}

@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-menu ul li {
+  margin-left: 1.5rem;
+  text-transform: capitalize;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.header {
+  z-index: 1;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header img {
+  height: 3rem;
+}
+
+.active a {
+  color: green !important;
+  font-weight: 800 !important;
+}
+
+.toggle, .bars, .close-menu {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .nav-menu {
+    padding: 2rem;
+    position: relative;
+  }
+  .nav-menu ul {
+    display: none;
+  }
+  .bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3rem;
+  }
+  .menu-list {
+    background-color: wheat;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .menu-list li {
+    padding: 2rem;
+  }
+  .close-menu {
+    z-index: 2;
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 1024px) and (min-width: 770px) {
+  .header .container {
+    padding: 2rem;
+  }
+  .header .menu-list a {
+    font-size: 1.5rem;
+  }
+}
+
+.hero {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(#f0e6e6)), url(../media/hero-image.jpg);
+  background-image: linear-gradient(rgba(255, 0, 0, 0), #f0e6e6), url(../media/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-grid-container {
+  padding: 10rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-content h2, .hero-content h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.hero-content span {
+  color: green;
+  font-weight: bolder;
+  margin-left: 0.5rem;
+}
+
+.wrapper {
+  background-color: green;
+  display: -ms-grid;
+  display: grid;
+  text-transform: capitalize;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+.wrapper .wrapper-legend {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-bottom: 5px solid yellowgreen;
+  padding: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.wrapper .wrapper-legend i {
+  margin-right: 0.5rem;
+}
+
+.wrapper-timing {
+  padding: 1.5rem 0;
+}
+
+.wrapper-timing .weekdays, .wrapper-timing .weekend {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid white;
+  padding: 1rem 0;
+}
+
+.wrapper-timing .weekdays h2, .wrapper-timing .weekend h2 {
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.wrapper-timing .weekdays h3, .wrapper-timing .weekend h3 {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.wrapper-contact {
+  padding: 1.5rem 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper-contact h2, .wrapper-contact a {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.wrapper-contact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.wrapper-contact h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.service {
+  background-color: greenyellow;
+  height: 1500px;
+}
+
+@media all and (max-width: 768px) {
+  .hero-grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .hero-content {
+    padding: 7.5rem 1.5rem 3rem 1.5rem;
+  }
+}
+
+@media all and (max-width: 1024px) and (min-width: 770px) {
+  .hero .hero-grid-container {
+    padding: 10rem 2rem !important;
+  }
+  .wrapper-timing {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.primary {
+  background-color: #ffffff;
+}
+
+.primary .primary-legend {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 0;
+  color: #333C4E;
+}
+
+.primary .primary-legend h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  border-bottom: 5px solid green;
+  text-transform: capitalize;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-bottom: 1rem;
+}
+
+.primary .primary-legend h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.primary .primary-legend span {
+  color: green;
+  font-weight: bolder;
+  margin-left: 0.5rem;
+}
+
+.features {
+  padding-bottom: 4rem;
+  color: #333C4E;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.features img {
+  height: 200px;
+}
+
+.features .calender, .features .treatment, .features .specialist, .features .facility {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.features .calender h2, .features .treatment h2, .features .specialist h2, .features .facility h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-weight: 700;
+}
+
+@media all and (max-width: 768px) {
+  .primary .container {
+    padding: 0 2rem;
+  }
+  .features {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .calender, .treatment, .specialist, .facility {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+  .calender h2, .treatment h2, .specialist h2, .facility h2 {
+    font-size: 1.15rem !important;
+  }
+}
+
+@media all and (max-width: 1024px) and (min-width: 770px) {
+  .primary .primary-legend, .primary .features {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+.doctor {
+  background-color: #F7F7F7;
+  padding: 2rem 0;
+  color: #333C4E;
+}
+
+.doctor-legend {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #333C4E;
+}
+
+.doctor-legend img {
+  height: 200px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.doctor-legend h2 {
+  border-bottom: 2.5px solid green;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.doctor-legend p {
+  padding: 2rem 0;
+  font-size: 1.25rem;
+}
+
+.doctor-portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  border: 5px solid #EAEAEA;
+  background-color: #EAEAEA;
+  padding: 1.5rem;
+}
+
+.doctor-portfolio .doctor-info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=main.css.map */

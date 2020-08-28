@@ -1,0 +1,83 @@
+.primary {
+    background-color: #ffffff;
+    .primary-legend {
+        display: grid;
+        justify-content: center;
+        padding: 4rem 0;
+        color: #333C4E;
+        // border-bottom: 1px solid green;
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;  
+            border-bottom: 5px solid green;
+            text-transform: capitalize;
+            justify-self: center;
+            padding-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding-top: 2rem;
+
+        }
+        span {
+            color: green;
+            font-weight: bolder;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.features {
+    padding-bottom: 4rem;
+    color: #333C4E;
+    display: grid;
+    // overflow-wrap: none;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    // border: 1px solid red;
+    img {
+        height: 200px;
+    }
+    .calender,.treatment,.specialist,.facility {
+        justify-self: center;
+        // border: 1px solid red;
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            justify-self: center;
+            font-weight: 700;
+        }
+    }
+}
+
+
+@media all and (max-width:768px) {
+    .primary {
+        // padding-top: 10rem;
+        .container {
+            padding: 0 2rem;
+        }
+    }
+    .features {
+        grid-template-columns: 1fr;
+    }
+   
+    .calender,.treatment,.specialist,.facility{
+        display: grid;
+        justify-items: center;
+        h2 {
+            font-size: 1.15rem !important;
+        }
+    }
+}
+
+@media all and (max-width:1024px) and (min-width: 770px) {
+    .primary {
+        .primary-legend,.features {
+            padding-left:2rem !important;
+            padding-right: 2rem !important;
+        }
+        
+    }
+}
