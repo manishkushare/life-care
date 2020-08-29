@@ -3,12 +3,11 @@
     // padding-bottom: 4rem 0;
     padding: 2rem 0;
     color: #333C4E;
+    
 }
 .doctor-legend {
-    // padding: 2.5rem 0;
     display: grid;
     justify-content: center;
-    // border-bottom: 5px solid green;
     color: #333C4E;
     img{
         height: 200px;
@@ -32,11 +31,51 @@
 .doctor-portfolio {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    border: 5px solid #EAEAEA;
     background-color: #EAEAEA;
+    box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
+    border-radius: 25px 25px 25px 25px;
     padding: 1.5rem;
   
     .doctor-info {
         align-self: center;
+        display: grid;
+        h2 {
+            padding-bottom: 2rem;
+        }
+        button {
+            justify-self: center;
+            border-radius: 1rem;
+            border: 1px solid green;
+            padding: 0.5rem 3rem;
+            background-color: green;
+            justify-content: center;
+        }
+        a{
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.doctor-image {
+
+    img{
+        width: 100%;
+    }
+    h2,h3,h4{
+        font-weight: 600;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .doctor-portfolio {
+        grid-template-columns: 1fr !important;
+    }
+    .doctor {
+        .container {
+            padding: 0 1.5rem;
+        }
     }
 }

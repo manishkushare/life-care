@@ -2,6 +2,7 @@ var bars= document.querySelector(".bars");
 var header = document.querySelector(".header");
 let menuList = document.querySelector(".menu-list");
 let listItem = document.querySelectorAll(".list-item");
+// let wrapper = document.querySelector(".wrapper");
 
 function handleBars(event) {
     event.target.style.display = "none";
@@ -33,6 +34,10 @@ listItem.forEach(item => {
     });
 })
 
+// function handleFlip() {
+//     wrapper.style.transform = 'horizontal flip';
+// }
 
 bars.addEventListener("click", handleBars);
 window.addEventListener("scroll", changeColor);
+// wrapper.addEventListener("mousemove" , handleFlip)

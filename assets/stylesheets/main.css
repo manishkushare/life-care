@@ -208,6 +208,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
+  -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 25px 25px 25px 25px;
 }
 
 .wrapper .wrapper-legend {
@@ -285,6 +288,9 @@ body {
   }
   .hero-content {
     padding: 7.5rem 1.5rem 3rem 1.5rem;
+  }
+  .wrapper {
+    margin: 1.5rem;
   }
 }
 
@@ -426,14 +432,57 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  border: 5px solid #EAEAEA;
   background-color: #EAEAEA;
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 25px 25px 25px 25px;
   padding: 1.5rem;
 }
 
 .doctor-portfolio .doctor-info {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
+  -ms-grid-row-align: center;
       align-self: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.doctor-portfolio .doctor-info h2 {
+  padding-bottom: 2rem;
+}
+
+.doctor-portfolio .doctor-info button {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 1rem;
+  border: 1px solid green;
+  padding: 0.5rem 3rem;
+  background-color: green;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.doctor-portfolio .doctor-info a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.doctor-image img {
+  width: 100%;
+}
+
+.doctor-image h2, .doctor-image h3, .doctor-image h4 {
+  font-weight: 600;
+}
+
+@media all and (max-width: 768px) {
+  .doctor-portfolio {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .doctor .container {
+    padding: 0 1.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
