@@ -31,10 +31,14 @@
 .doctor-portfolio {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    background-color: #EAEAEA;
     box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
     border-radius: 25px 25px 25px 25px;
     padding: 1.5rem;
+    // background-color: rgb(177, 214, 9);
+    // color: black;
+    background-color: #EAEAEA;
+    
+
   
     .doctor-info {
         align-self: center;
@@ -76,6 +80,14 @@
     .doctor {
         .container {
             padding: 0 1.5rem;
+        }
+    }
+}
+
+@media all and (min-width:770px) and (max-width:1024px) {
+    .doctor {
+        .container {
+            padding: 0 2rem;
         }
     }
 }
