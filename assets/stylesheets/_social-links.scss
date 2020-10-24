@@ -4,17 +4,17 @@
         // margin:0px;
         position:fixed;
         right:-130px;
+        transform: translateX();
         top:40%;
         width:10rem;
         z-index: 1100;
     }
     .sticky li{
-        list-style-type:none;
         background-color:green;
         color:white;
         height:43px;
-        padding:0px;
-        margin:0px 0px 1px 0px;
+        // padding:0px;
+        margin:0px 0px 5px 0px;
         -webkit-transition:all 0.25s ease-in-out;
         -moz-transition:all 0.25s ease-in-out;
         -o-transition:all 0.25s ease-in-out;

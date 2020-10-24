@@ -45,4 +45,4 @@ function handleSticky() {
 
 bars.addEventListener("click", handleBars);
 window.addEventListener("scroll", changeColor);
-// sticky.addEventListener("touchstart", handleSticky);
+sticky.addEventListener("onclick", handleSticky);
