@@ -1,0 +1,30 @@
+.services {
+    color: #333C4E;
+    img {
+        height: 200px;
+    }
+}
+
+.service-legend {
+    display: grid;
+    padding: 4rem 0;
+    h2,img,p{
+        justify-self: center;
+    }
+    h2 {
+        border-bottom: 2.5px solid green;
+        margin: 2rem 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+}
+
+@media all and (max-width:768px) {
+    .service-legend {
+        padding: 0 2rem;
+    }
+}

@@ -68,6 +68,10 @@ body {
   margin: 0 auto;
 }
 
+.margin-top {
+  margin-top: 4rem;
+}
+
 .nav-menu {
   padding: 1rem 0;
   display: -webkit-box;
@@ -546,5 +550,92 @@ body {
   .secondary .secondary-content a {
     font-size: 1rem;
   }
+}
+
+.services {
+  color: #333C4E;
+}
+
+.services img {
+  height: 200px;
+}
+
+.service-legend {
+  display: -ms-grid;
+  display: grid;
+  padding: 4rem 0;
+}
+
+.service-legend h2, .service-legend img, .service-legend p {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.service-legend h2 {
+  border-bottom: 2.5px solid green;
+  margin: 2rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.service-legend p {
+  font-size: 1.25rem;
+}
+
+@media all and (max-width: 768px) {
+  .service-legend {
+    padding: 0 2rem;
+  }
+}
+
+.social-links .sticky-container {
+  position: fixed;
+  right: -130px;
+  top: 40%;
+  width: 10rem;
+  z-index: 1100;
+}
+
+.social-links .sticky li {
+  list-style-type: none;
+  background-color: green;
+  color: white;
+  height: 43px;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.social-links .sticky li:hover {
+  margin-left: -110px;
+}
+
+.social-links .sticky li i {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin: 5px 4px;
+  color: #fff;
+}
+
+.social-links .sticky li p {
+  padding-top: 5px;
+  margin: 0px;
+  line-height: 16px;
+  font-size: 11px;
+  white-space: pre;
+}
+
+.social-links .sticky li p a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.social-links .sticky li p a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,7 +3,9 @@ var header = document.querySelector(".header");
 let menuList = document.querySelector(".menu-list");
 let listItem = document.querySelectorAll(".list-item");
 // let wrapper = document.querySelector(".wrapper");
+let sticky = document.querySelectorAll(".sticky-list");
 
+// hamburger menu
 function handleBars(event) {
     event.target.style.display = "none";
     let menu = document.querySelector(".menu-list")
@@ -17,6 +19,7 @@ function handleBars(event) {
     })
 }
 
+// to change the background color of the header on scrolling 
 function changeColor() {
     if(window.scrollY > 100) {
         header.style.backgroundColor = "white"; 
@@ -27,6 +30,7 @@ function changeColor() {
  
 }
 
+// to change the active tab on header section
 listItem.forEach(item => {
     item.addEventListener("click", function() {
         menuList.querySelector(".active").classList.remove("active");
@@ -34,10 +38,11 @@ listItem.forEach(item => {
     });
 })
 
-// function handleFlip() {
-//     wrapper.style.transform = 'horizontal flip';
-// }
+// handle sticky social icons 
+function handleSticky() {
+    sticky.style.marginLeft = "-115px";
+}
 
 bars.addEventListener("click", handleBars);
 window.addEventListener("scroll", changeColor);
-// wrapper.addEventListener("mousemove" , handleFlip)
+// sticky.addEventListener("touchstart", handleSticky);
