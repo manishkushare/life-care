@@ -601,7 +601,7 @@ body {
   cursor: pointer;
 }
 
-.social-links .sticky-list a {
+.sticky-list a {
   color: #ffffff;
   background: rgba(0, 0, 0, 0.4);
   font-size: 1.25rem;
@@ -619,14 +619,35 @@ body {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  font-size: 20px;
 }
 
-.social-links .sticky-list li a:hover {
+.sticky-list li a:hover {
   -webkit-transform: translate(-12rem, 0);
           transform: translate(-12rem, 0);
 }
 
-.social-links .sticky-list i {
+.sticky-list i {
   margin-right: 20px;
+  font-size: 25px;
+}
+
+.sticky-list li:nth-child(1) i {
+  color: #90CAF9;
+}
+
+.sticky-list li:nth-child(2) i {
+  color: transparent;
+  background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
+  -webkit-background-clip: text;
+  font-weight: 800;
+}
+
+.sticky-list li:nth-child(3) i {
+  color: green;
+}
+
+.sticky-list li:nth-child(4) i {
+  color: #075e54;
 }
 /*# sourceMappingURL=main.css.map */
