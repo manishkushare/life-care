@@ -591,51 +591,42 @@ body {
 
 .social-links .sticky-container {
   position: fixed;
-  right: -130px;
-  -webkit-transform: translateX();
-          transform: translateX();
-  top: 40%;
-  width: 10rem;
-  z-index: 1100;
+  right: -22rem;
+  top: 30%;
+  height: 100vh;
 }
 
 .social-links .sticky li {
-  background-color: green;
-  color: white;
-  height: 43px;
-  margin: 0px 0px 5px 0px;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.social-links .sticky li:hover {
-  margin-left: -110px;
-}
-
-.social-links .sticky li i {
-  float: left;
-  width: 32px;
-  height: 32px;
-  margin: 5px 4px;
-  color: #fff;
-}
-
-.social-links .sticky li p {
-  padding-top: 5px;
-  margin: 0px;
-  line-height: 16px;
-  font-size: 11px;
-  white-space: pre;
-}
-
-.social-links .sticky li p a {
+.social-links .sticky-list a {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.25rem;
+  font-weight: 600;
   text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
+  display: block;
+  margin: 5px;
+  padding: 20px;
+  width: 25rem;
+  text-align: left;
+  border-radius: 50px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
-.social-links .sticky li p a:hover {
-  text-decoration: underline;
+.social-links .sticky-list li a:hover {
+  -webkit-transform: translate(-12rem, 0);
+          transform: translate(-12rem, 0);
+}
+
+.social-links .sticky-list i {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
