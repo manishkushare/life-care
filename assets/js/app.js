@@ -4,6 +4,7 @@ let menuList = document.querySelector(".menu-list");
 let listItem = document.querySelectorAll(".list-item");
 // let wrapper = document.querySelector(".wrapper");
 let sticky = document.querySelectorAll(".sticky-list");
+let bookSlot = document.querySelector(".book-slot");
 
 // hamburger menu
 function handleBars(event) {
@@ -38,11 +39,12 @@ listItem.forEach(item => {
     });
 })
 
-// handle sticky social icons 
-function handleSticky() {
-    sticky.style.marginLeft = "-115px";
+
+// book-slot to book appointment online
+function bookAppointment(event) {
+    window.open("https://clinicia.com/calendar/book?u=manisha lal");
 }
 
 bars.addEventListener("click", handleBars);
 window.addEventListener("scroll", changeColor);
-sticky.addEventListener("onclick", handleSticky);
+bookSlot.addEventListener("click", bookAppointment);

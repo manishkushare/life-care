@@ -5,7 +5,7 @@
         position:fixed;
         right:-22rem;
         // transform: translateX();
-        top:30%;
+        top:25%;
         // width:10rem;
         height: 100vh;
         // z-index: 1100;
@@ -70,4 +70,7 @@
 }
 .sticky-list li:nth-child(4) i{
     color:#075e54;
+}
+.sticky-list li:nth-child(5) i{
+    color:#D8CB09;
 }

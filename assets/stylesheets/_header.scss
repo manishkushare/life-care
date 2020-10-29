@@ -44,6 +44,8 @@
     .nav-menu {
         padding: 2rem;
         position: relative;
+        // transform: translateX(100%);
+
         ul{
             display: none;
         }
@@ -69,7 +71,7 @@
     }
 }
 
-@media all and (max-width:1024px) and (min-width: 770px) {
+@media all and (max-width:1024px) and (min-width: 769px) {
     .header {
         .container {
             padding: 2rem;
@@ -80,5 +82,34 @@
            }
         }
     }
+    .nav-menu {
+        padding: 2rem;
+        position: relative;
+        top: 0;
+        right: -11px;
+        ul{
+            display: none;
+        }
+    }
+    .bars {
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .menu-list {
+        background-color: wheat;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        li {
+            padding: 2rem;
+        }
+    }
+    .close-menu {
+        z-index: 2;
+        font-size: 2rem;
+    }
+    
 
 }

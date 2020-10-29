@@ -23,6 +23,87 @@
     }
 }
 
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    background-color: #EAEAEA;
+    border-radius: 2rem;
+    padding: 2rem;
+    img {
+        width: 100%;
+        // border-radius: 2rem;
+    }
+}
+.mascuskeletal, .nuero,.community,.cardio {
+    display: grid;
+    padding: 2rem ;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 8px 10px 11px 0px rgba(0,0,0,0.75);
+
+    p, button {
+        justify-self: center;
+        margin: 1rem 0;
+    }
+    p {
+        font-size: 20px;
+    }
+    button {
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 2rem;
+        font-size: 16px;
+        background-color: green;
+        color: #ffffff;
+    }
+}
+// 
+.card-container {
+    cursor: pointer;
+    height: 200px;
+    perspective: 600;
+    position: relative;
+    // width: 300px;
+
+  }
+
+.card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+  }
+  .card .back {
+    background-color: black;;
+    color: #0087cc;
+    // line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+    p {
+        text-align: left;
+        padding: 1rem;
+        font-size: 16px;
+        color: #ffffff;
+    }
+  }
+
+
 @media all and (max-width:768px) {
     .service-legend {
         padding: 0 2rem;
