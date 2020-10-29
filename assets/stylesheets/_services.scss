@@ -27,7 +27,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 40px;
-    background-color: #EAEAEA;
+    // background-color: #EAEAEA;
     border-radius: 2rem;
     padding: 2rem;
     img {
@@ -38,7 +38,7 @@
 .mascuskeletal, .nuero,.community,.cardio {
     display: grid;
     padding: 2rem ;
-    background-color: #ffffff;
+    background-color: #EAEAEA;
     border-radius: 2rem;
     box-shadow: 8px 10px 11px 0px rgba(0,0,0,0.75);
 
@@ -90,15 +90,15 @@
     }
   }
   .card .back {
-    background-color: black;;
-    color: #0087cc;
+    background-color: green;
+    // color: #0087cc;
     // line-height: 150px;
     text-align: center;
     transform: rotateY(180deg);
     p {
         text-align: left;
         padding: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: #ffffff;
     }
   }
