@@ -98,7 +98,7 @@
     p {
         text-align: left;
         padding: 1rem;
-        font-size: 16px;
+        font-size: 0.8rem;
         color: #ffffff;
     }
   }
@@ -107,5 +107,8 @@
 @media all and (max-width:768px) {
     .service-legend {
         padding: 0 2rem;
+    }
+    .service-content {
+        grid-template-columns:  1fr;
     }
 }
