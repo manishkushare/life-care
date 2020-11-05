@@ -1,9 +1,10 @@
 
 .hero {
     position: relative;
-    background-image: linear-gradient(rgba(255,0,0,0), rgb(240, 230, 230)) ,url(../media/hero-image.jpg);
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(240, 230, 230)) ,url(../media/run.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    // background-position: center;
+    // background-position-x: left;
     background-size: cover;
     // height: 100vh;
     
@@ -139,6 +140,13 @@
     .hero-box {
         display: grid;
         justify-content: center;
+    }
+    .hero {
+        background-size: contain;
+        background-position: top;
+        background-size: 100vh
+
+
     }
 }
 
