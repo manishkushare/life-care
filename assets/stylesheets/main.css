@@ -988,19 +988,23 @@ body {
 .cardio-pulmonary, .community-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2] !important;
-      grid-template-columns: repeat(2, 1fr) !important;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
+  padding: 2rem 0;
+  justify-items: center;
 }
 
 @media all and (max-width: 768px) {
+  .service-hero {
+    background-size: contain;
+  }
   .service-def, .service-list-col {
     margin: auto 1rem;
   }
   .musculo-hero {
     background-size: contain;
-    background-position: top;
-    background-size: 100vh;
+    background-position: center;
   }
   .service-list-wrapper {
     -ms-grid-columns: 1fr;
