@@ -523,8 +523,13 @@ body {
   display: grid;
 }
 
+.doctor-portfolio .doctor-info p {
+  padding: 2rem 0;
+}
+
 .doctor-portfolio .doctor-info h2 {
-  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .doctor-portfolio .doctor-info button {
@@ -604,6 +609,9 @@ body {
   border: 1px solid white;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  text-transform: capitalize;
+  outline: none;
 }
 
 .secondary .secondary-content a {
@@ -656,9 +664,130 @@ body {
   font-size: 1.25rem;
 }
 
+.service-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  padding: 2rem 0;
+}
+
+.card_container {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 900px;
+          perspective: 900px;
+  padding: 0 1rem;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  -webkit-box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front {
+  background: green;
+  font-size: 24px;
+}
+
+.card-img {
+  background: black;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.card_body {
+  width: 100%;
+}
+
+.card_body button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: 0px;
+  text-transform: capitalize;
+  color: green;
+  font-weight: 600;
+}
+
+.card_body h2 {
+  font-size: 20px;
+}
+
+.back {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+}
+
+.back button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: 0px;
+  text-transform: capitalize;
+  color: green;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card_container:hover .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 @media all and (max-width: 768px) {
   .service-legend {
     padding: 0 2rem;
+  }
+  .service-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -726,5 +855,160 @@ body {
 
 .sticky-list li:nth-child(5) i {
   color: #D8CB09;
+}
+
+.service-hero {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(#f0e6e6)), url(../media/run.jpg);
+  background-image: linear-gradient(rgba(255, 0, 0, 0), #f0e6e6), url(../media/run.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+}
+
+.service-legend {
+  display: -ms-grid;
+  display: grid;
+}
+
+.service-legend h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: #2e312e;
+  text-align: center;
+}
+
+.service-legend button {
+  background-color: green;
+  color: white;
+  margin: 2rem 0;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  outline: none;
+  border: 0px;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.service-def {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
+}
+
+.service-def .service-def-image {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.service-def .service-def-image img {
+  -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.service-def .service-info {
+  text-align: center;
+}
+
+.service-def .service-info h2 {
+  font-size: 26px;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+
+.service-def .service-info p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.service-list-col h2 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.service-list-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding: 2rem 0;
+  justify-items: center;
+}
+
+.service-list {
+  background-color: green;
+  width: 200px;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.service-list img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.service-list h2 {
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.cardio-pulmonary, .community-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2] !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+  grid-gap: 40px;
+}
+
+@media all and (max-width: 768px) {
+  .service-def, .service-list-col {
+    margin: auto 1rem;
+  }
+  .musculo-hero {
+    background-size: contain;
+    background-position: top;
+    background-size: 100vh;
+  }
+  .service-list-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .cardio-pulmonary, .community-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */

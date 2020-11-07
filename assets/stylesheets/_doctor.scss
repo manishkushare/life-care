@@ -1,5 +1,8 @@
 .doctor {
     background-color: #F7F7F7;
+    // background-image: url(/assets/media/doctor_background.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
     // padding-bottom: 4rem 0;
     padding: 2rem 0;
     color: #333C4E;
@@ -43,8 +46,12 @@
     .doctor-info {
         align-self: center;
         display: grid;
+        p {
+            padding: 2rem 0;
+        }
         h2 {
-            padding-bottom: 2rem;
+            font-size: 1.5rem;
+            font-weight: 600;
         }
         button {
             justify-self: center;
