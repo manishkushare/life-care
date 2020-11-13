@@ -5,6 +5,8 @@
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    // line-height: 1.5;
+    // overflow-x: hidden !important;
 }
 
 .container{
@@ -13,4 +15,10 @@ body {
 }
 .margin-top {
     margin-top: 4rem;
+}
+
+@media all and (max-width: 768px){
+    // .container {
+    //     padding: 0 5px;
+    // }
 }

@@ -14,7 +14,7 @@
 .service-legend {
     display: grid;
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-transform: capitalize;
         font-weight: 800;
         color: rgb(46, 49, 46);
@@ -119,15 +119,12 @@
 @media all and (max-width: 768px)  {
     .service-hero {
         background-size: contain;
+        
     }
     .service-def,.service-list-col {
         margin: auto 1rem;
     }
-    .musculo-hero {
-        background-size: contain;
-        background-position: center;
-        // background-size: 100vh
-    }
+
     .service-list-wrapper {
         grid-template-columns: 1fr;
     }

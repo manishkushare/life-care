@@ -17,6 +17,7 @@
 </head>
 <body>
     <header class="header">
+        <div class="container">
             <nav class="container nav-menu">
                 <a href="#"><img src="assets/media/698ad0c2-7e14-49b8-b1f9-7ec2b64895b6_200x200.png" alt="Life care logo" srcset=""></a>
                 
@@ -30,7 +31,16 @@
                 <ul class="menu-list">
                     <li class="list-item active"><a href="index.html">home</a></li>
                     <li class="list-item"><a href="about.html">about</a></li>
-                    <li class="list-item"><a href="#">Services</a></li>
+                    <li class="list-item dropdown"><a href="#">Services</a><i class="fas fa-chevron-circle-down "></i>
+                        <div class="sub-menu-list-box"> 
+                            <ul class="sub-menu-list">
+                                <li class="sub-menu-items"><a href="musculoskeleton.html">Musculoskeletal Conditions</a></li>
+                                <li class="sub-menu-items"><a href="neurological.html">Nuerological Conditions</a></li>
+                                <li class="sub-menu-items"><a href="cardio-pulmonary.html">Cardio Pulmory Conditions</a></li>
+                                <li class="sub-menu-items"><a href="community.html">Community Physiotherapy</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="list-item"><a href="#">testimonials</a></li>
                     <li class="list-item"><a href="#">contact us</a></li>
                     <li class="list-item"><a href="#">covid-19 update</a></li>
@@ -38,6 +48,7 @@
                 </ul>
             </nav>
         </div>
+            
     </header>
 
     <main>
@@ -58,10 +69,6 @@
                                 <h2>monday - saturday</h2>
                                 <h3>9am -9pm</h3>
                             </div>
-                            <!-- <div class="weekend">
-                                <h2>saturday</h2>
-                                <h3>9am- 6pm</h3>
-                            </div> -->
                         </div>
                         <div class="book-slot">
                             <button class="btn-book"><i class="far fa-calendar-check"></i>Book Appointment here</button>
