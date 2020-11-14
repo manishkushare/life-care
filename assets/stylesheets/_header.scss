@@ -19,7 +19,6 @@
     }
 }
 .header {
-    // background-color: white;
     z-index: 1;
     background-color: transparent;
     position: fixed;
@@ -85,6 +84,7 @@
 }
 
 @media all and (max-width: 768px) {
+    
     .nav-menu {
         padding: 2rem;
         position: relative;
@@ -105,7 +105,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        // left: 0;
+        left: 0;
         li {
             padding: 2rem;
         }

@@ -200,6 +200,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    left: 0;
   }
   .menu-list li {
     padding: 2rem;
