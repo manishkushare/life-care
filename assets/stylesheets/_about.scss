@@ -1,0 +1,18 @@
+.about {
+    .doctor-legend {
+        margin-top: 4rem;
+    }
+    .doctor-portfolio {
+        background-color: rgb(62, 197, 62);
+        color: white;
+    }
+    .book-slot{
+        color: green;
+        text-transform: capitalize;
+        box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+        background-color: wheat !important;
+        outline: 0;
+        border: none;
+    }
+}

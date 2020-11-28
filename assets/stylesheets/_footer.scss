@@ -1,0 +1,138 @@
+.footer {
+    line-height: 1.5;
+    background-color: rgb(61,129,22);
+    .map-direction {
+        padding: 2rem 0;
+    }
+
+}
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: #ffffff;
+    padding: 2rem 0;
+}
+.footer_service_list,.footer_pledge {
+    border-right: 4px solid white;
+}
+.footer_service_list,.footer_pledge,.footer_address {
+ padding: 0 2rem;
+}
+.footer_service_list{
+    h2 {
+        font-size: 24px;
+        text-transform: capitalize;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+    li {
+        padding: 1rem 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.footer_address {
+    text-transform: capitalize;
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 2rem;
+    }
+    h3{
+        font-weight: 800;
+        font-size: 20px;
+    }
+    p{
+        padding: 2rem 0;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 0;
+        color: #ffffff;
+    }
+    h4{
+        font-weight: 800;
+        font-size: 20px;  
+    }
+}
+.footer_pledge {
+    background-color: #ffffff;
+    a {
+        display: grid;
+        justify-content: center;
+    }
+    img {
+        height: 5rem;
+    }
+    h2,p {
+        display: grid;
+        justify-content: center;
+        color: green;
+        font-weight: bolder;
+    }
+    p{
+        padding: 2rem 0;
+        text-align: center;
+    }
+}
+.footer_tail {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    .copy {
+        // font-size: 16px;
+        color: green;
+        display: block;
+        text-align: center;
+    }
+    a {
+        margin-left:5px;
+        text-decoration: none;
+        color: green;
+        font-weight: bolder;
+        &:hover {
+            color:yellowgreen;
+            font-weight: bolder;
+        }
+    }
+    .developer_name{
+        padding: 0.2rem 0;
+    }
+    .fa-envelope {
+        padding-right: 0.5rem;
+    }
+}
+
+
+@media all and (max-width:768px) {
+    .footer_content{
+        grid-template-columns: 1fr;
+    }
+    .map-direction {
+        padding: 0 !important;
+    }
+    .footer_address {
+        h2{
+            margin-top: 2rem;
+        }
+    }
+    .footer_pledge {
+        padding-top: 2rem;
+    }
+    .footer_service_list {
+        padding-bottom: 2rem;
+    }
+}
+
+@media all and (max-width:1024px) and (min-width: 770px) {
+    .footer {
+        line-height: 1.5;
+        .container {
+            padding: 0 2rem;
+        }
+        
+    }
+}
