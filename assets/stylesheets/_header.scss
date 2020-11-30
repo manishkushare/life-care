@@ -105,11 +105,22 @@
         position: absolute;
         top: 0;
         right: 0;
-        left: 0;
         li {
             padding: 2rem;
         }
+        .dropdown {
+            &:hover .sub-menu-list-box {
+                display: block;
+            }
+        }
     }
+    // .sub-menu-list-box {
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    // }
     .close-menu {
         z-index: 2;
         font-size: 2rem;

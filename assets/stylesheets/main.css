@@ -200,10 +200,12 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    left: 0;
   }
   .menu-list li {
     padding: 2rem;
+  }
+  .menu-list .dropdown:hover .sub-menu-list-box {
+    display: block;
   }
   .close-menu {
     z-index: 2;
@@ -1124,6 +1126,12 @@ body {
   font-weight: 600;
 }
 
+.footer_service_list a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .footer_address {
   text-transform: capitalize;
 }
@@ -1155,6 +1163,10 @@ body {
 .footer_address h4 {
   font-weight: 800;
   font-size: 20px;
+}
+
+.footer_address i {
+  margin-right: 0.5rem;
 }
 
 .footer_pledge {
