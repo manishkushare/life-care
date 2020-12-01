@@ -200,6 +200,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    left: 0;
   }
   .menu-list li {
     padding: 2rem;
@@ -210,6 +211,14 @@ body {
   .close-menu {
     z-index: 2;
     font-size: 2rem;
+  }
+  .mobile_header_version {
+    display: block;
+    padding: 3px 48px !important;
+  }
+  .mobile_header_version a {
+    font-size: 0.9rem !important;
+    font-weight: bold;
   }
 }
 
@@ -227,6 +236,7 @@ body {
   }
   .nav-menu ul {
     display: none;
+    padding-top: 30px;
   }
   .bars {
     display: -webkit-box;
@@ -241,8 +251,8 @@ body {
     background-color: wheat;
     height: 100vh;
     position: absolute;
-    top: 0;
-    right: -14px;
+    top: 0px;
+    right: -52px;
   }
   .menu-list li {
     padding: 2rem;
@@ -250,6 +260,14 @@ body {
   .close-menu {
     z-index: 2;
     font-size: 2rem;
+  }
+  .mobile_header_version {
+    display: block;
+    padding: 3px 48px !important;
+  }
+  .mobile_header_version a {
+    font-size: 0.9rem !important;
+    font-weight: bold;
   }
 }
 
@@ -1103,10 +1121,6 @@ body {
       grid-template-columns: repeat(3, 1fr);
   color: #ffffff;
   padding: 2rem 0;
-}
-
-.footer_service_list, .footer_pledge {
-  border-right: 4px solid white;
 }
 
 .footer_service_list, .footer_pledge, .footer_address {

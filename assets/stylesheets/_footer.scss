@@ -12,13 +12,14 @@
     color: #ffffff;
     padding: 2rem 0;
 }
-.footer_service_list,.footer_pledge {
-    border-right: 4px solid white;
-}
+// .footer_service_list,.footer_pledge {
+//     border-right: 4px solid white;
+// }
 .footer_service_list,.footer_pledge,.footer_address {
  padding: 0 2rem;
 }
 .footer_service_list{
+    // text-align: center;
     h2 {
         font-size: 24px;
         text-transform: capitalize;
