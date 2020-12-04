@@ -177,6 +177,10 @@ body {
   color: yellow;
 }
 
+.mobile_header_version {
+  display: none;
+}
+
 @media all and (max-width: 768px) {
   .nav-menu {
     padding: 2rem;
