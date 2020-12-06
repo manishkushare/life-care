@@ -277,7 +277,8 @@ body {
 
 .hero {
   position: relative;
-  background-image: url(../media/hero-back-img-3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(#ebe8e8)), url(../media/run77.jpeg);
+  background-image: linear-gradient(rgba(255, 0, 0, 0), #ebe8e8), url(../media/run77.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -437,7 +438,8 @@ body {
             justify-content: center;
   }
   .hero {
-    background-size: contain !important;
+    background-size: cover;
+    background-position: center;
   }
 }
 

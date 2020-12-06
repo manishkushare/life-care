@@ -1,11 +1,16 @@
 
-.hero {
+.hero{
     position: relative;
-    background-image:url(../media/hero-back-img-3.jpg);
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(235, 232, 232)) ,url(../media/run77.jpeg);
 
-    // linear-gradient(rgba(255,0,0,0), rgb(240, 230, 230)) ,
+    
     background-repeat: no-repeat;
     background-size: cover;
+    // -webkit-background-size:cover;
+    // -moz-background-size:cover;
+    // -o-background-size:cover;
+    // background-size:cover;
+    // background-position:center;
 
 }
 .hero-grid-container {
@@ -143,11 +148,12 @@
         justify-content: center;
     }
     .hero {
-        background-size: contain !important;
-        // background-position: top;
-        // background-size: 100vh;
-        
-
+        // background-repeat:no-repeat;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+        background-position:center;
     }
 }
 
