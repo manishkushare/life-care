@@ -1,14 +1,12 @@
 
 .hero {
     position: relative;
-    background-image: linear-gradient(rgba(255,0,0,0), rgb(240, 230, 230)) ,url(../media/run.jpg);
-    // background-image: url(/assets/media/run.jpg);
+    background-image:url(../media/hero-back-img-3.jpg);
+
+    // linear-gradient(rgba(255,0,0,0), rgb(240, 230, 230)) ,
     background-repeat: no-repeat;
-    // background-position: center;
-    // background-position-x: left;
     background-size: cover;
-    // height: 100vh;
-    
+
 }
 .hero-grid-container {
     padding: 10rem 0;
@@ -20,6 +18,7 @@
 .hero-content {
 
     h1{
+        // color: rgb(68, 4, 4);
         font-size: 3rem;
         font-weight: 700;    
     }
@@ -144,10 +143,10 @@
         justify-content: center;
     }
     .hero {
-        background-size: contain;
-        background-position: top;
-        background-size: 100vh
-
+        background-size: contain !important;
+        // background-position: top;
+        // background-size: 100vh;
+        
 
     }
 }
