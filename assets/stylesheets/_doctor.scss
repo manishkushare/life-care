@@ -46,6 +46,7 @@
     .doctor-info {
         align-self: center;
         display: grid;
+        padding: 0 2rem;
         p {
             padding: 2rem 0;
         }
@@ -78,8 +79,49 @@
         font-weight: 600;
     }
 }
+.assistant-doctor {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    // height: 200px;
+    grid-gap: 40px;
+    padding: 2rem 0;
+}
+.assistant-doctor-col1,.assistant-doctor-col2 {
+    background-color: #EAEAEA;
+    padding: 2rem;
+    box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
+    border-radius: 25px 25px 25px 25px;
+    img {
+        width: 100%;
+        height: 450px;
+        // height: 500px;
+        
+    }
+    .assistant-doctor-portfolio {
+        h2,h3{
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    
+}
+.doctor {
+    .staff-member{
+        padding: 2rem;
+        background-color: #EAEAEA;
+        box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
+        border-radius: 25px 25px 25px 25px;
+        
+        img {
+            width: 100%;
 
-
+        }
+        h2 {
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}
 @media all and (max-width: 768px) {
     .doctor-portfolio {
         grid-template-columns: 1fr !important;
@@ -88,6 +130,12 @@
         .container {
             padding: 0 1.5rem;
         }
+    }
+    .doctor-info {
+        padding: 0 !important;
+    }
+    .assistant-doctor {
+        grid-template-columns: 1fr;
     }
 }
 
