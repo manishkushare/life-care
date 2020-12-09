@@ -278,11 +278,11 @@ body {
 }
 
 .hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 211, 211, 0)), to(#a1d8a4)), url(../media/hero-image-001.jpeg);
+  background-image: linear-gradient(rgba(229, 211, 211, 0), #a1d8a4), url(../media/hero-image-001.jpeg);
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(#ebe8e8)), url(../media/run77.jpeg);
-  background-image: linear-gradient(rgba(255, 0, 0, 0), #ebe8e8), url(../media/run77.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
@@ -427,6 +427,11 @@ body {
     padding: 0;
   }
   .hero-content {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 211, 211, 0)), to(#a1d8a4)), url(../media/hero-image-001.jpeg);
+    background-image: linear-gradient(rgba(229, 211, 211, 0), #a1d8a4), url(../media/hero-image-001.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
     padding: 7.5rem 1.5rem 3rem 1.5rem;
   }
   .wrapper {
@@ -441,9 +446,7 @@ body {
             justify-content: center;
   }
   .hero {
-    background-size: cover;
-    background-position: top center;
-    padding: 29px 0 32px;
+    background-image: none;
   }
 }
 
