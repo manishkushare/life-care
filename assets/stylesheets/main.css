@@ -693,14 +693,13 @@ body {
 }
 
 .assistant-doctor-col1, .assistant-doctor-col2 {
-  background-color: #EAEAEA;
   padding: 2rem;
-  -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 25px 25px 25px 25px;
 }
 
 .assistant-doctor-col1 img, .assistant-doctor-col2 img {
+  border-radius: 25px 25px 25px 25px;
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
   width: 100%;
   height: 450px;
 }
@@ -712,13 +711,12 @@ body {
 
 .doctor .staff-member {
   padding: 2rem;
-  background-color: #EAEAEA;
-  -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 25px 25px 25px 25px;
 }
 
 .doctor .staff-member img {
+  border-radius: 25px 25px 25px 25px;
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
   width: 100%;
 }
 
@@ -1186,10 +1184,6 @@ body {
 
 .about .doctor-legend {
   margin-top: 4rem;
-}
-
-.about .doctor-portfolio, .about .assistant-doctor-col1, .about .assistant-doctor-col2 {
-  background-color: #EAEAEA;
 }
 
 .about .book-slot {
