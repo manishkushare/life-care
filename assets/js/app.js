@@ -5,10 +5,7 @@ let listItem = document.querySelectorAll(".list-item");
 // let wrapper = document.querySelector(".wrapper");
 let sticky = document.querySelectorAll(".sticky-list");
 let bookSlot = document.querySelector(".book-slot");
-let musculo = document.querySelector(".muscuskeleton");// to select musculskeleton card-container in service-content
-let neuro = document.querySelector(".nuerological");//to select neuro card-container in servidce section
-let cardio = document.querySelector(".cardio");//to select cardio card-container in service section
-let community = document.querySelector(".community");//to select the community card-container in the service section
+
 
 
 // hamburger menu
@@ -49,29 +46,43 @@ listItem.forEach(item => {
 function bookAppointment(event) {
     window.location.href = "https://clinicia.com/calendar/book?u=manisha lal";
 }
-// to go to masculoskeleton page
-function gotoMusculoskeletonPage(event) {
-    window.location.href ="musculoskeleton.html";
-}
-
-// to go to neurological page
-function gotoNeuroPage(event) {
-    window.location.href = "neurological.html";
-}
-
-// to go to cardio page
-function gotoCardioPage(event) {
-    window.location.href = "cardio-pulmonary.html";
-}
-// go to community page
-function gotoCommunity(event) {
-    window.location.href = "community.html";
-}
 
 bars.addEventListener("click", handleBars);
 window.addEventListener("scroll", changeColor);
 bookSlot.addEventListener("click", bookAppointment);
-musculo.addEventListener("click", gotoMusculoskeletonPage);
-neuro.addEventListener("click" ,gotoNeuroPage );
-cardio.addEventListener("click", gotoCardioPage);
-community.addEventListener("click", gotoCommunity);
+
+
+// testimonials
+var slider = document.querySelector(".slider");
+var arrowLeft = document.querySelector(".arrow_left");
+
+var arrrowRight = document.querySelector(".arrow_right");
+
+var indicatorParents = document.querySelector('.controls ul');
+var sectionIndex = 0;
+
+
+document.querySelectorAll('.controls li').forEach(function(indicator,ind){
+    indicator.addEventListener("click", function (){
+        document.querySelector('.controls .selected').classList.remove('selected');
+        sectionIndex = ind;
+        slider.style.transform = 'translate('+(sectionIndex) * -25 +'%)';
+        indicator.classList.add("selected");
+
+    })
+});
+
+arrrowRight.addEventListener("click", function() {
+    sectionIndex = (sectionIndex < 3)?  sectionIndex +  1: 3;
+    document.querySelector('.controls .selected').classList.remove('selected');
+
+    indicatorParents.children[sectionIndex].classList.add('selected');
+    slider.style.transform = 'translate('+(sectionIndex) * -25 +'%)';
+})
+
+arrowLeft.addEventListener("click", function() {
+    sectionIndex = (sectionIndex > 0)?  sectionIndex -1: 0;
+    document.querySelector('.controls .selected').classList.remove('selected');
+    indicatorParents.children[sectionIndex].classList.add('selected');
+    slider.style.transform = 'translate('+ sectionIndex * -25 + '%)';
+})

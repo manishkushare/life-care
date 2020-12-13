@@ -63,6 +63,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -592,10 +594,24 @@ body {
   }
 }
 
+.about .doctor-legend {
+  margin-top: 4rem;
+}
+
+.book-slot {
+  color: #ffffff;
+  text-transform: capitalize;
+  -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  outline: 0;
+  border: none;
+}
+
 .doctor {
-  background-color: #F7F7F7;
-  padding: 2rem 0;
-  color: #333C4E;
+  background-color: #f7f7f7;
+  padding: 4rem 0;
+  color: #333c4e;
 }
 
 .doctor-legend {
@@ -604,7 +620,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #333C4E;
+  color: #333c4e;
 }
 
 .doctor-legend img {
@@ -637,7 +653,7 @@ body {
           box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 25px 25px;
   padding: 1.5rem;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .doctor-portfolio .doctor-info {
@@ -653,8 +669,8 @@ body {
 }
 
 .doctor-portfolio .doctor-info h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 
 .doctor-portfolio .doctor-info button {
@@ -667,20 +683,29 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: 0;
 }
 
-.doctor-portfolio .doctor-info a {
-  color: #ffffff;
+.doctor-portfolio .doctor-info button a {
+  color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .doctor-image img {
   width: 100%;
 }
 
-.doctor-image h2, .doctor-image h3, .doctor-image h4 {
+.doctor-image h2,
+.doctor-image h3,
+.doctor-image h4 {
   font-weight: 600;
+}
+
+.doctor-image h2 {
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
 .assistant-doctor {
@@ -692,25 +717,62 @@ body {
   padding: 2rem 0;
 }
 
-.assistant-doctor-col1, .assistant-doctor-col2 {
+.assistant-doctor-col1,
+.assistant-doctor-col2 {
+  background-color: #EAEAEA;
   padding: 2rem;
+  border-radius: 25px;
 }
 
-.assistant-doctor-col1 img, .assistant-doctor-col2 img {
+.assistant-doctor-col1 .assistant-doctor-portfolio,
+.assistant-doctor-col2 .assistant-doctor-portfolio {
+  padding: 1rem 0;
+}
+
+.assistant-doctor-col1 .assistant-doctor-image,
+.assistant-doctor-col2 .assistant-doctor-image {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.assistant-doctor-col1 .assistant-doctor-image img,
+.assistant-doctor-col2 .assistant-doctor-image img {
   border-radius: 25px 25px 25px 25px;
   -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
-  width: 100%;
-  height: 450px;
+  width: 200px;
+  height: 250px;
+  text-align: center;
 }
 
-.assistant-doctor-col1 .assistant-doctor-portfolio h2, .assistant-doctor-col1 .assistant-doctor-portfolio h3, .assistant-doctor-col2 .assistant-doctor-portfolio h2, .assistant-doctor-col2 .assistant-doctor-portfolio h3 {
+.assistant-doctor-col1 .assistant-doctor-portfolio h2,
+.assistant-doctor-col1 .assistant-doctor-portfolio h3,
+.assistant-doctor-col1 .assistant-doctor-portfolio h4,
+.assistant-doctor-col1 .assistant-doctor-portfolio h5,
+.assistant-doctor-col1 .assistant-doctor-portfolio h6,
+.assistant-doctor-col1 .assistant-doctor-portfolio ul,
+.assistant-doctor-col2 .assistant-doctor-portfolio h2,
+.assistant-doctor-col2 .assistant-doctor-portfolio h3,
+.assistant-doctor-col2 .assistant-doctor-portfolio h4,
+.assistant-doctor-col2 .assistant-doctor-portfolio h5,
+.assistant-doctor-col2 .assistant-doctor-portfolio h6,
+.assistant-doctor-col2 .assistant-doctor-portfolio ul {
   font-weight: 600;
   text-align: center;
 }
 
+.assistant-doctor-col1 .assistant-doctor-portfolio h2,
+.assistant-doctor-col2 .assistant-doctor-portfolio h2 {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
 .doctor .staff-member {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .doctor .staff-member img {
@@ -731,7 +793,7 @@ body {
         grid-template-columns: 1fr !important;
   }
   .doctor .container {
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
   }
   .doctor-info {
     padding: 0 !important;
@@ -744,7 +806,7 @@ body {
 
 @media all and (min-width: 770px) and (max-width: 1024px) {
   .doctor .container {
-    padding: 0 2rem;
+    padding: 4rem 2rem;
   }
 }
 
@@ -788,6 +850,11 @@ body {
   outline: none;
   color: green;
   font-weight: 600;
+}
+
+.secondary .secondary-content button a {
+  text-decoration: none;
+  color: green;
 }
 
 @media all and (max-width: 768px) {
@@ -957,7 +1024,6 @@ body {
   .service-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin: 2rem auto;
   }
 }
 
@@ -1182,18 +1248,170 @@ body {
   }
 }
 
-.about .doctor-legend {
-  margin-top: 4rem;
+.contact .secondary {
+  background-color: #ffffff;
 }
 
-.about .book-slot {
-  color: #ffffff;
-  text-transform: capitalize;
-  -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
+.contact .secondary h2 {
+  color: green !important;
+}
+
+.contact .secondary button {
+  background-color: green;
   outline: 0;
   border: none;
+}
+
+.contact .secondary button a {
+  color: #ffffff;
+}
+
+.testimonial_legend {
+  padding: 1rem 0;
+  color: #ffff;
+}
+
+.testimonial_legend h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.testimonial_legend h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.corousel {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider_container {
+  margin: 10px auto;
+}
+
+.slider {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400%;
+  -webkit-transition: all 0.3sec;
+  transition: all 0.3sec;
+}
+
+.slider section {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.controls .arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.controls i {
+  font-size: 30px;
+}
+
+.controls .arrow_left {
+  left: 5px;
+}
+
+.controls .arrow_right {
+  right: 5px;
+}
+
+.controls ul {
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.controls ul li {
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls ul li.selected {
+  background-color: #ffffff;
+}
+
+.testimonial_content {
+  padding: 0 2rem;
+}
+
+.testimonial_content i {
+  font-size: 2rem;
+}
+
+.testimonial_content p {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.testimonial_content .testimonial_portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.testimonial_content .testimonial_portfolio h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.testimonial_content .testimonial_portfolio img {
+  margin-left: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial_content p {
+    font-size: 0.6rem;
+  }
+  .testimonials .testimonial_container {
+    padding: 1rem 2rem;
+  }
+  .testimonial_portfolio h4 {
+    font-size: 0.9rem !important;
+  }
+  .testimonial_legend h2 {
+    font-size: 1.5rem;
+  }
+  .testimonial_legend h3 {
+    font-size: 1rem;
+  }
 }
 
 .footer {
