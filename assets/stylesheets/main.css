@@ -719,6 +719,8 @@ body {
 
 .assistant-doctor-col1,
 .assistant-doctor-col2 {
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
   background-color: #EAEAEA;
   padding: 2rem;
   border-radius: 25px;
@@ -1415,6 +1417,7 @@ body {
 }
 
 .footer {
+  display: none;
   line-height: 1.5;
   background-color: #3d8116;
 }

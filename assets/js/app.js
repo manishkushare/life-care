@@ -1,3 +1,5 @@
+// const COLOR_BLACL = '#00000';?
+
 var bars= document.querySelector(".bars");
 var header = document.querySelector(".header");
 let menuList = document.querySelector(".menu-list");
