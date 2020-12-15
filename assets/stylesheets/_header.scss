@@ -26,13 +26,14 @@
     left: 0;
     right: 0;
     // bottom: 0;
+    background-color: gold;
     img{
         height: 3rem;
     }
 }
 
 .active a{
-    color: green !important;
+    color: navy !important;
     font-weight: 800 !important;
 }
 .toggle,.bars,.close-menu {
@@ -61,7 +62,7 @@
     .sub-menu-list {
         display: flex;
         flex-direction: column;
-        background-color: rgb(9, 114, 9);
+        background-color: navy;
         border-radius: 20px;
         box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
         padding: 10px 20px;
@@ -72,11 +73,11 @@
         margin-left: 0 !important;
         padding: 5px 0;
         a {
-            color: #ffffff !important;
+            color: gold;
             font-size: 1rem;
             line-height: 1.2;
             &:hover {
-                color: yellow !important;
+                color: red !important;
             }
         }
 
@@ -86,7 +87,9 @@
     display: none ;
 }
 @media all and (max-width: 768px) {
-    
+    // .header {
+    //     background-color: transparent;
+    // }
     .nav-menu {
         padding: 2rem;
         position: relative;
@@ -102,15 +105,19 @@
         font-size: 3rem;
     }
     .menu-list {
-        background-color: wheat;
+        background-color: navy;
         height: 100vh;
         position: absolute;
         top: 0;
         right: 0;
         left: 0;
         text-align: center;
+        color: gold;
         li {
             padding: 2rem;
+            a {
+                color: gold !important;
+            }
         }
         
     }
@@ -119,10 +126,18 @@
         left: 120px;
         right: 0;
         padding: 0;
-        transform: translateX(-62px);  
+        transform: translateX(-62px);
+        .sub-menu-list {
+            background-color: gold;
+            .sub-menu-items {
+                a{
+                    color: navy !important;
+                }
+            }
+        }
+    }
 
 
-    } 
     .close-menu {
         z-index: 2;
         font-size: 2rem;
@@ -137,7 +152,8 @@
         }
         .menu-list {
            a{
-               font-size: 1.5rem;
+               font-size: 2.5rem;
+               
            }
         }
     }
@@ -145,7 +161,7 @@
         padding: 2rem;
         position: relative;
         top: 0;
-        // right: -14px;
+        // right: -14px
         ul{
             display: none;
             padding-top: 30px;
@@ -157,7 +173,7 @@
         font-size: 3rem;
     }
     .menu-list {
-        background-color: wheat;
+        background-color: navy;
         height: 100vh;
         position: absolute;
         top: -32px;
@@ -166,7 +182,11 @@
         text-align: center;
         // padding: 0;
         li {
-            padding: 2rem;
+            padding: 4rem 2rem;;
+            a {
+                color: gold !important;
+                // font-size: 2rem !important;
+            }
         }
     }
     .close-menu {
@@ -179,9 +199,25 @@
         right: 0;
         padding: 0;
         transform: translateX(-69px);  
-
+        .sub-menu-list {
+            background-color: gold;
+            .sub-menu-items {
+                a{
+                    color: navy !important;
+                }
+            }
+        }
 
     }
     
 
+}
+
+@media all and (width: 768px) {
+    .menu-list {
+        a{
+            font-size: 2.5rem !important;
+            
+        }
+     }
 }

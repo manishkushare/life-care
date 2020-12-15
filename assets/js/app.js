@@ -27,10 +27,10 @@ function handleBars(event) {
 // to change the background color of the header on scrolling 
 function changeColor() {
     if(window.scrollY > 100) {
-        header.style.backgroundColor = "white"; 
+        header.style.backgroundColor = "aqua"; 
     }
     else {
-        header.style.backgroundColor = "transparent"
+        header.style.backgroundColor = "gold"
     }
  
 }

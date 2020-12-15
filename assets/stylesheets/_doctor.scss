@@ -1,11 +1,8 @@
 .doctor {
-  background-color: #f7f7f7;
-  // background-image: url(/assets/media/doctor_background.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // padding-bottom: 4rem 0;
+  // background-color: #f7f7f7;
+  background-color: gold;
   padding: 4rem 0;
-  color: #333c4e;
+  color: black;
   // .container {
   //     padding: 4rem 0;
   // }
@@ -14,18 +11,24 @@
 .doctor-legend {
   display: grid;
   justify-content: center;
-  color: #333c4e;
+  color: black;
   img {
     height: 200px;
     justify-self: center;
+    box-shadow: 10px 5px 11px 0px rgba(27, 35, 110, 0.849);
+    border-radius: 40%;
+
   }
   h2 {
-    border-bottom: 2.5px solid green;
+    // border-bottom: 2.5px solid green;
+    padding-top: 2rem;
+    border-bottom: 2.5px solid navy;
     padding-bottom: 2rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     justify-self: center;
+    color: navy;
   }
   p {
     padding: 2rem 0;
@@ -39,7 +42,9 @@
   box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 25px 25px;
   padding: 1.5rem;
-  background-color: #eaeaea;
+  // background-color: #eaeaea;
+  background-color: navy;
+  color: gold;
 
   .doctor-info {
     align-self: center;
@@ -50,20 +55,21 @@
     }
     h2 {
       font-size: 1.2rem;
-      font-weight: 8git00;
+      font-weight: 800;
     }
     button {
       justify-self: center;
       border-radius: 1rem;
-      border: 1px solid green;
+      border: none;
       padding: 0.5rem 3rem;
-      background-color: green;
+      background-color: yellow;
       justify-content: center;
       text-transform: capitalize;
       cursor: pointer;
       outline: 0;
       a {
-        color: #fff;
+        color: navy;
+        font-weight: 600;
         text-decoration: none;
       }
     }
@@ -74,6 +80,9 @@
 .doctor-image {
   img {
     width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
+
   }
   h2,
   h3,
@@ -95,7 +104,9 @@
 .assistant-doctor-col1,
 .assistant-doctor-col2 {
   box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
-  background-color: #EAEAEA;
+  // background-color: #EAEAEA;
+  background-color: navy;
+  color: gold;
   padding:  2rem;
   border-radius: 25px;
   .assistant-doctor-portfolio {
@@ -108,7 +119,8 @@
     // border: 1px solid black;
     img {
       border-radius: 25px 25px 25px 25px;
-      box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
+
       width: 200px;
       height: 250px;
       text-align: center;
@@ -168,5 +180,19 @@
     .container {
       padding: 4rem 2rem;
     }
+  }
+}
+
+@media all and (width: 768px) {
+  .doctor-portfolio {
+      grid-template-columns: repeat(2,1fr) !important;
+      .doctor-info {
+        padding: 0 2rem !important;
+      }
+  }
+  .assistant-doctor-col1,
+  .assistant-doctor-col2 {
+    width: 70%;
+    justify-self: center;
   }
 }

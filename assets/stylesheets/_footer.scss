@@ -1,18 +1,21 @@
 .footer {
-    display: none;
+    // display: none;
     line-height: 1.5;
-    background-color: rgb(61,129,22);
+    background-color: navy;
     .map-direction {
         padding: 2rem 0;
         text-align: center;
+        width: 100%;
+        // background-color: gold;
     }
 
 }
 .footer_content {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    color: #ffffff;
+    color:navy;
     padding: 2rem 0;
+    background-color: gold;
 }
 // .footer_service_list,.footer_pledge {
 //     border-right: 4px solid white;
@@ -35,7 +38,7 @@
     }
     a {
         text-decoration: none;
-        color: #ffffff;
+        // color: #ffffff;
         font-weight: bold;
     }
 }
@@ -60,7 +63,7 @@
         display: block;
         text-decoration: none;
         padding: 10px 0;
-        color: #ffffff;
+        // color: #ffffff;
     }
     h4{
         font-weight: 800;
@@ -71,7 +74,8 @@
     }
 }
 .footer_pledge {
-    background-color: #ffffff;
+    background-color:navy;
+    color: gold;
     a {
         display: grid;
         justify-content: center;
@@ -82,7 +86,7 @@
     h2,p {
         display: grid;
         justify-content: center;
-        color: green;
+        // color: green;
         font-weight: bolder;
     }
     p{
@@ -91,22 +95,25 @@
     }
 }
 .footer_tail {
-    background-color: #ffffff;
+    background-color: gold;
     padding: 1rem 0;
+    margin-top: 2rem;
+    color: navy;
     .copy {
         // font-size: 16px;
-        color: green;
+        // color: green;
         display: block;
         text-align: center;
     }
     a {
         margin-left:5px;
         text-decoration: none;
-        color: green;
+        color: navy;
         font-weight: bolder;
         &:hover {
-            color:yellowgreen;
+            color:brown;
             font-weight: bolder;
+            cursor: pointer;
         }
     }
     .developer_name{
@@ -136,6 +143,15 @@
     }
     .footer_service_list {
         padding-bottom: 2rem;
+        justify-self: center;
+    }
+    .footer_tail {
+        background-color: navy;
+        color:gold;
+        margin: 0;
+        a {
+            color: gold;
+        }
     }
 }
 
@@ -146,5 +162,11 @@
             padding: 0 2rem;
         }
         
+    }
+}
+
+@media all and (width:768px) {
+    .footer_address {
+        justify-self: center;
     }
 }

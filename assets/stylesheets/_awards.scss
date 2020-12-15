@@ -3,18 +3,20 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 4rem 0;
-        background-color: green;
+        // background-color: green;
+        background-color: gold;
         .award_col1,.award_col2 {
             display: flex;
             justify-content: center;
             padding: 0 1rem;
+            color: navy;
             i {
                 font-size: 2rem;
-                color: #ffffff;
+                // color: #ffffff;
             }
             .award_title {
                 margin-left: 10px;
-                color: #ffffff;
+                // color: #ffffff;   
                 font-size: 1rem;
                 font-weight: 600;
             }

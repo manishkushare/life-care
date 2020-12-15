@@ -1,7 +1,7 @@
 
 .hero{
     // display: none;
-    background-image: linear-gradient(rgba(229, 211, 211, 0), rgb(161, 216, 164)) ,url(../media/hero-image-001.jpeg);
+    background-image: linear-gradient(rgba(229, 211, 211, 0), rgb(37, 75, 180)) ,url(../media/hero-image-001.jpeg);
     position: relative;
     background-repeat: no-repeat;
     background-size:contain;
@@ -20,35 +20,43 @@
     
     h1{
         font-size: 3rem;
-        font-weight: 700;    
+        font-weight: 700;   
     }
     h2,h3 {
         text-transform: capitalize;
         font-size: 1.5rem;
         font-weight: 600;
+        // color: rgb(234, 9, 122);
+        color: gold;
+    }
+    h2 {
+        // text-align: center;
+        padding-bottom: 2rem;
     }
     span {
-        color: green;
+        color: gold;
         font-weight: bolder;
         margin-left: 0.5rem;
     }
+
     
 }
 .wrapper {
-    background-color: green;
+    background-color: gold;
     display: grid;
     text-transform: capitalize;
     align-content: center;
     justify-content: center;
-    color: #ffffff;
+    // color: #ffffff;
+    color: navy;
     box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
     border-radius: 25px 25px 25px 25px;
     .wrapper-legend {
         // display: grid;
         justify-self: center;
-        border-bottom: 5px solid yellowgreen;
+        border-bottom: 5px solid navy;
         padding: 1.5rem;
-        color: #ffffff;
+        color: navy;
         text-transform: uppercase;
         font-size: 1.4rem;
         font-weight: 600;
@@ -63,7 +71,9 @@
     .weekdays{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        border-bottom: 1px solid white;
+        // border-bottom: 1px solid white;
+        border-bottom: 1px solid navy;
+
         padding: 1rem 0;
         h2 {
             justify-self: left;
@@ -77,13 +87,13 @@
 .book-slot {
     display: flex;
     justify-content: center;
-    
+    // background-color: transparent;
     button {
         cursor: pointer;
-        border-radius: 2rem;
+        // border-radius: 2rem;
         padding: 1rem 2rem;
         border: 1px solid wheat;
-        color: green;
+        color: navy;
         font-size: 1rem;
         font-weight: 600;
         box-shadow: 8px 10px 11px 0px rgba(0,0,0,0.75);
@@ -105,7 +115,8 @@
     }
     a{
         text-decoration: none;
-        color: #ffffff;
+        // color: #ffffff;
+        color: navy;
     }
     h2 {
         font-weight: 600;
@@ -114,23 +125,14 @@
 }
 
 
-.service {
-    background-color: greenyellow;
-    height: 1500px;
-}
-
-
 @media all and (max-width: 768px) {
-
+    
     .hero-grid-container {
         grid-template-columns: 1fr;
         padding: 0;
     }
     .hero-content {
-        background-image: linear-gradient(rgba(229, 211, 211, 0), rgb(161, 216, 164)) ,url(../media/hero-image-001.jpeg);
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // background-position: center;
+        background-image: linear-gradient(rgba(229, 211, 211, 0), rgb(37, 63, 133)) ,url(../media/hero-image-001.jpeg);
         background-repeat:no-repeat;
         -webkit-background-size:cover;
         -moz-background-size:cover;
@@ -138,7 +140,16 @@
         background-size:cover;
         background-position:top center;
         padding: 7.5rem 1.5rem 3rem 1.5rem;
-        // color: #ffffff;
+        margin-top: 4rem;
+        h1 {
+            font-size: 1.25rem;
+            span {
+                font-size: 2rem;
+            }
+        }
+        h2,h3 {
+            font-size: 1rem;
+        }
     }
     .wrapper {
         margin: 1.5rem;
@@ -148,21 +159,16 @@
     .hero-box {
         display: grid;
         justify-content: center;
+        background-color: navy;
     }
     .hero {
-        // background-repeat:no-repeat;
-        // -webkit-background-size:cover;
-        // -moz-background-size:cover;
-        // -o-background-size:cover;
-        // background-size:cover;
-        // background-position:top center;
-        // padding: 29px 0 32px;
         background-image: none;
     }
 }
 
-@media all and (max-width:1024px) and (min-width: 770px) {
+@media all and (max-width:1024px) and (min-width: 769px) {
     .hero {
+        margin-top: 8rem;
         .hero-grid-container {
             padding: 10rem 2rem !important;
         }
@@ -173,4 +179,30 @@
    .wrapper-timing {
        padding: 1.5rem 0.2rem !important;
    }
+   .hero-content {
+    margin-top: 8rem;
+
+   }
+}
+
+@media all and (width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(229, 211, 211, 0), rgb(37, 63, 133)) ,url(../media/hero-image-001.jpeg);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position:center;
+        // height: 100vh;
+        
+    }
+    .hero-grid-container {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 7rem;
+    }
+    .hero-content {
+        background-image: none;
+        padding-top: 3rem;
+    }
+    .hero-box{
+        background-color: transparent;
+    }
 }

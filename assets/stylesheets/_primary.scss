@@ -1,17 +1,22 @@
 .primary {
     // display: none;
-    background-color: #ffffff;
+    // background-color: #ffffff;
+    background-color: navy;
     .primary-legend {
         display: grid;
         justify-content: center;
         padding: 4rem 0;
-        color: #333C4E;
+        // color: #333C4E;
+        color: white;
+
         // border-bottom: 1px solid green;
         
         h2 {
             font-size: 3rem;
             font-weight: 700;  
-            border-bottom: 5px solid green;
+            // border-bottom: 5px solid green;
+            border-bottom: 5px solid yellow;
+
             text-transform: capitalize;
             justify-self: center;
             padding-bottom: 1rem;
@@ -23,7 +28,8 @@
 
         }
         span {
-            color: green;
+            // color: green;
+            color: gold;
             // font-size: 0.5rem;
             font-weight: bolder;
             margin-left: 0.5rem;
@@ -33,7 +39,8 @@
 
 .features {
     padding-bottom: 4rem;
-    color: #333C4E;
+    // color: #333C4E;
+    color: gold;
     display: grid;
     // overflow-wrap: none;
     grid-gap: 20px;
@@ -41,11 +48,16 @@
     // border: 1px solid red;
     img {
         height: 200px;
+        border-radius: 40%;
+        box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
+
     }
     .calender,.treatment,.specialist,.facility {
         justify-self: center;
         // border: 1px solid red;
         h2 {
+            // display: grid;
+            padding: 2rem 0;
             font-size: 1.2rem;
             text-transform: uppercase;
             justify-self: center;
@@ -57,7 +69,8 @@
     .primary-banner {
         width: 100%;
         margin-top: 4rem;
-        box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
+
         border-radius: 25px 25px 25px 25px;
         // margin: 0;
     }
