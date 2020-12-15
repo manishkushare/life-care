@@ -76,6 +76,12 @@ body {
   margin-top: 4rem;
 }
 
+@media all and (min-width: 770px) and (max-width: 1024px) {
+  .service_page .header .menu-list, .contact .header .menu-list {
+    top: 0;
+  }
+}
+
 .nav-menu {
   padding: 1rem 0;
   display: -webkit-box;
@@ -173,7 +179,7 @@ body {
 }
 
 .menu-list .sub-menu-items a {
-  color: gold;
+  color: gold !important;
   font-size: 1rem;
   line-height: 1.2;
 }
@@ -268,7 +274,7 @@ body {
     background-color: navy;
     height: 100vh;
     position: absolute;
-    top: -32px;
+    top: -30px;
     left: -44px;
     right: -44px;
     text-align: center;
@@ -661,23 +667,26 @@ body {
   }
 }
 
-.about .doctor-legend {
-  margin-top: 4rem;
-}
-
-.book-slot {
-  color: #ffffff;
+.about .book-slot {
+  color: navy;
   text-transform: capitalize;
   -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   outline: 0;
   border: none;
+  font-weight: 600;
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px) {
+  .about header .menu-list {
+    top: 0;
+  }
 }
 
 .doctor {
   background-color: gold;
-  padding: 4rem 0;
+  padding: 7rem 0 4rem 0;
   color: black;
 }
 
@@ -865,6 +874,9 @@ body {
 .doctor .staff-member h2 {
   font-weight: 600;
   text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: navy;
 }
 
 @media all and (max-width: 768px) {
@@ -938,7 +950,6 @@ body {
 .secondary .secondary-content button {
   padding: 1rem 2rem;
   border-radius: 10px;
-  border: 1px solid white;
   background-color: gold;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -959,7 +970,7 @@ body {
     margin: 0 2rem;
   }
   .secondary .secondary-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .secondary .secondary-content a {
     font-size: 1rem;
@@ -1201,10 +1212,11 @@ body {
 
 .service-hero {
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(#f0e6e6)), url(../media/run.jpg);
-  background-image: linear-gradient(rgba(255, 0, 0, 0), #f0e6e6), url(../media/run.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(#f0e6e6)), url(../media/hero-image-003.jpeg);
+  background-image: linear-gradient(rgba(255, 0, 0, 0), #f0e6e6), url(../media/hero-image-003.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -1225,13 +1237,13 @@ body {
   font-size: 1.8rem;
   text-transform: capitalize;
   font-weight: 800;
-  color: #2e312e;
+  color: navy;
   text-align: center;
 }
 
 .service-legend button {
-  background-color: green;
-  color: white;
+  background-color: navy;
+  color: gold;
   margin: 2rem 0;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1239,11 +1251,17 @@ body {
   border-radius: 5px;
   outline: none;
   border: 0px;
-  font-size: 20px;
+  font-size: 1rem;
   text-transform: capitalize;
+  font-weight: 600;
   cursor: pointer;
   -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.service-wrapper {
+  background-color: gold;
+  color: navy;
 }
 
 .service-def {
@@ -1281,6 +1299,11 @@ body {
   font-weight: 600;
 }
 
+.service-list-col {
+  background-color: gold !important;
+  color: navy;
+}
+
 .service-list-col h2 {
   font-size: 24px;
   font-weight: 600;
@@ -1299,7 +1322,8 @@ body {
 }
 
 .service-list {
-  background-color: green;
+  background-color: navy;
+  color: gold;
   width: 200px;
   border-radius: 5px;
   -webkit-box-pack: center;
@@ -1322,7 +1346,6 @@ body {
   padding: 1rem 0;
   text-align: center;
   text-transform: capitalize;
-  color: #fff;
   font-weight: 600;
   font-size: 18px;
 }
@@ -1340,9 +1363,20 @@ body {
 @media all and (max-width: 768px) {
   .service-hero {
     background-size: contain;
+    background-position: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 10rem;
+  }
+  .service-info h2 {
+    font-size: 1.2rem !important;
+  }
+  .service-info p {
+    font-size: 1rem !important;
   }
   .service-def, .service-list-col {
-    margin: auto 1rem;
+    padding: 1rem;
   }
   .service-list-wrapper {
     -ms-grid-columns: 1fr;
@@ -1354,22 +1388,89 @@ body {
   }
 }
 
+@media all and (width: 768px) {
+  .service-hero {
+    padding-top: 20rem;
+  }
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px) {
+  .service-hero {
+    padding-top: 15rem;
+  }
+}
+
+.contact_address {
+  background-color: navy;
+  color: gold;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  text-transform: capitalize;
+}
+
+.contact_address h2, .contact_address h3, .contact_address address, .contact_address h4, .contact_address a, .contact_address h5 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.contact_address a {
+  color: gold;
+  text-decoration: none;
+}
+
+.contact_address h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.contact_address h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.contact_address i {
+  margin-right: 0.5rem;
+}
+
+.contact_address h4, .contact_address h5 {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+.contact_address a {
+  display: block;
+  text-transform: none;
+}
+
 .contact .secondary {
-  background-color: #ffffff;
+  background-color: gold;
+  color: navy;
 }
 
 .contact .secondary h2 {
-  color: green !important;
+  font-size: 1.5rem;
 }
 
 .contact .secondary button {
-  background-color: green;
-  outline: 0;
-  border: none;
+  background-color: navy;
 }
 
 .contact .secondary button a {
-  color: #ffffff;
+  color: gold;
+}
+
+@media all and (max-width: 768px) {
+  .contact_address .container {
+    padding: 0 2rem;
+  }
 }
 
 .testimonial_legend {
@@ -1570,7 +1671,6 @@ body {
 .footer_address h2 {
   font-size: 24px;
   font-weight: bold;
-  padding-bottom: 2rem;
 }
 
 .footer_address h3 {
@@ -1587,7 +1687,7 @@ body {
 .footer_address a {
   display: block;
   text-decoration: none;
-  padding: 10px 0;
+  color: navy;
 }
 
 .footer_address h4 {
@@ -1706,6 +1806,13 @@ body {
   .footer_address {
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px) {
+  .footer_pledge {
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -11,7 +11,7 @@
             // font-size: 1rem;
             a{
                 text-decoration: none;
-                color: black ;
+                color: black;
                 font-weight: 600;
                 font-size: 1.15rem;
             }
@@ -73,7 +73,7 @@
         margin-left: 0 !important;
         padding: 5px 0;
         a {
-            color: gold;
+            color: gold !important;
             font-size: 1rem;
             line-height: 1.2;
             &:hover {
@@ -176,16 +176,15 @@
         background-color: navy;
         height: 100vh;
         position: absolute;
-        top: -32px;
+        top: -30px;
         left: -44px;
         right: -44px;
         text-align: center;
-        // padding: 0;
         li {
             padding: 4rem 2rem;;
             a {
                 color: gold !important;
-                // font-size: 2rem !important;
+
             }
         }
     }

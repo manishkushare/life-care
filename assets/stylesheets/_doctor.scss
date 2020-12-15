@@ -1,12 +1,7 @@
 .doctor {
-  // background-color: #f7f7f7;
   background-color: gold;
-  padding: 4rem 0;
+  padding: 7rem 0 4rem 0;
   color: black;
-  // .container {
-  //     padding: 4rem 0;
-  // }
-  
 }
 .doctor-legend {
   display: grid;
@@ -155,6 +150,9 @@
     h2 {
       font-weight: 600;
       text-align: center;
+      font-size: 2rem;
+      padding-top: 2rem;
+      color: navy;
     }
   }
 }

@@ -1,12 +1,16 @@
 .service-hero {
     position: relative;
     // background-color: #d5d41e;
-    background-image: linear-gradient(rgba(255,0,0,0), rgb(240, 230, 230)) ,url(../media/run.jpg);
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(240, 230, 230)) ,url(../media/hero-image-003.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:top center;
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     height: 500px;
     
 }
@@ -17,29 +21,33 @@
         font-size: 1.8rem;
         text-transform: capitalize;
         font-weight: 800;
-        color: rgb(46, 49, 46);
+        color: navy;
         text-align: center;
         
     }
     button {
-        background-color: green;
-        color: white;
+        background-color: navy;
+        color: gold;
         margin: 2rem 0;
         justify-self: center;
         padding: 1rem 2rem;
         border-radius: 5px;
         outline: none;
         border: 0px;
-        font-size: 20px;
+        font-size: 1rem;    
         text-transform: capitalize;
+        font-weight: 600;
         cursor: pointer;
         box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
 
     }
 }
+.service-wrapper {
+    background-color: gold;
+    color: navy;
+}
 .service-def {
     display: grid;
-    // justify-content: center;
     justify-content: center;
     padding: 2rem 0;
     .service-def-image {
@@ -64,6 +72,8 @@
     }
 }
 .service-list-col {
+    background-color: gold !important;
+    color: navy;
     h2 {
         font-size: 24px;
         font-weight: 600;
@@ -79,12 +89,13 @@
     grid-gap: 40px;
     padding: 2rem 0;
     justify-items: center;
-    // margin: 0 auto;
+    // background-color: gold;
     
 }
 
 .service-list {
-    background-color: green;
+    background-color: navy;
+    color: gold;
     width: 200px;
     // height: 300px;
     border-radius: 5px;
@@ -103,7 +114,6 @@
         padding: 1rem 0;
         text-align: center;
         text-transform: capitalize;
-        color:#fff;
         font-weight: 600;
         font-size: 18px;
     }
@@ -118,11 +128,26 @@
 }
 @media all and (max-width: 768px)  {
     .service-hero {
-        background-size: contain;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:contain;
+        background-position: center;
+        height: fit-content;
+        padding-top: 10rem;
         
     }
+    .service-info {
+        h2 {
+            font-size: 1.2rem !important;
+
+        }
+        p {
+            font-size: 1rem !important;
+        }
+    }
     .service-def,.service-list-col {
-        margin: auto 1rem;
+        padding:  1rem;
     }
 
     .service-list-wrapper {
@@ -130,5 +155,17 @@
     }
     .cardio-pulmonary,.community-list{
         grid-template-columns: 1fr;
+    }
+}
+
+
+@media all and (width: 768px) {
+    .service-hero {
+        padding-top: 20rem;
+    }
+}
+@media all and (min-width: 770px) and (max-width: 1024px) {
+    .service-hero {
+        padding-top: 15rem;
     }
 }

@@ -48,7 +48,6 @@
     h2 {
         font-size: 24px;
         font-weight: bold;
-        padding-bottom: 2rem;
     }
     h3{
         font-weight: 800;
@@ -62,8 +61,8 @@
     a {
         display: block;
         text-decoration: none;
-        padding: 10px 0;
-        // color: #ffffff;
+        // padding: 10px 0;
+        color: navy;
     }
     h4{
         font-weight: 800;
@@ -168,5 +167,13 @@
 @media all and (width:768px) {
     .footer_address {
         justify-self: center;
+    }
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px) {
+    .footer_pledge {
+        font-size: 1.2rem;
+        text-align: center;
+        
     }
 }
