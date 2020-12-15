@@ -872,7 +872,7 @@ body {
 }
 
 .doctor .staff-member h2 {
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
   font-size: 2rem;
   padding-top: 2rem;
@@ -886,6 +886,9 @@ body {
   }
   .doctor .container {
     padding: 1rem 1.5rem;
+  }
+  .doctor .staff-member h2 {
+    font-size: 1rem;
   }
   .doctor-info {
     padding: 0 !important;
