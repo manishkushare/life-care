@@ -621,7 +621,6 @@ button {
   }
   .hero-content {
     background-image: none;
-    padding-top: 3rem;
   }
   .hero-box {
     background-color: transparent;
@@ -761,6 +760,13 @@ button {
   }
 }
 
+@media all and (width: 768px) {
+  .features {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .about .book-slot {
   color: navy;
   text-transform: capitalize;
@@ -788,13 +794,14 @@ button {
 .clinic_facilities .clinic_feature_image img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 308px;
 }
 
 .clinic_facilities .clinic_feature_info {
   display: -ms-grid;
   display: grid;
   padding: 0 2rem;
+  text-transform: capitalize;
 }
 
 .clinic_facilities .clinic_feature_info h2 {
@@ -870,6 +877,9 @@ button {
   .container {
     padding: 0 2rem;
   }
+  .clinic_facilities .third_row img, .clinic_facilities .fourth_row img, .clinic_facilities .seventh_row img {
+    height: 410px;
+  }
 }
 
 @media all and (width: 768px) {
@@ -917,7 +927,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: black;
+  color: navy;
 }
 
 .doctor-legend img {
@@ -938,10 +948,10 @@ button {
   font-weight: 700;
   -ms-grid-column-align: center;
       justify-self: center;
-  color: navy;
 }
 
 .doctor-legend p {
+  font-weight: 600;
   padding: 2rem 0;
   font-size: 1.25rem;
 }
@@ -1180,7 +1190,7 @@ button {
 }
 
 .secondary .secondary-content h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -1240,12 +1250,13 @@ button {
 .service-legend h2 {
   border-bottom: 2.5px solid navy;
   margin: 2rem 0;
-  font-size: 2rem;
+  font-size: 2rem !important;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .service-legend p {
+  text-transform: capitalize;
   font-size: 1.25rem;
 }
 
@@ -1380,6 +1391,13 @@ button {
   .service-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media all and (width: 768px) {
+  .service-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1628,13 +1646,13 @@ button {
 
 @media all and (width: 768px) {
   .service-hero {
-    padding-top: 20rem;
+    padding-top: 7rem;
   }
 }
 
 @media all and (min-width: 770px) and (max-width: 1024px) {
   .service-hero {
-    padding-top: 15rem;
+    padding-top: 8rem;
   }
 }
 
@@ -1821,24 +1839,9 @@ button {
   font-size: 1rem;
 }
 
-.testimonial_content .testimonial_portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
 .testimonial_content .testimonial_portfolio h4 {
   font-weight: 600;
   font-size: 1.5rem;
-}
-
-.testimonial_content .testimonial_portfolio img {
-  margin-left: 15px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
 }
 
 .video_feedbacks {
@@ -1855,11 +1858,6 @@ button {
 }
 
 .video_feedbacks .videos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
   padding: 2rem 0;
 }
 
@@ -1899,10 +1897,6 @@ button {
   }
   .testimonial_legend h3 {
     font-size: 1rem;
-  }
-  .videos {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
   }
   .video_feedbacks .container {
     padding: 0 2rem;
@@ -2021,6 +2015,7 @@ button {
 }
 
 .footer_pledge p {
+  text-transform: capitalize;
   padding: 2rem 0;
   text-align: center;
 }

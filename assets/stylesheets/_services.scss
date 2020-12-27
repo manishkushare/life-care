@@ -1,12 +1,9 @@
 .services {
-    // display: none;
+
     color: white;
     background-color: gold;
     img {
         height: 200px;
-
-        // border-radius: 40%;
-        // box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
 
     }
 }
@@ -21,12 +18,12 @@
     h2 {
         border-bottom: 2.5px solid navy;
         margin: 2rem 0;
-        font-size: 2rem;
+        font-size: 2rem !important;
         text-transform: uppercase;
         font-weight: 600;
-        // color: rgb(135, 133, 124);
     }
-    p{
+    p{  
+        text-transform: capitalize;
         font-size: 1.25rem;
     }
     img {
@@ -79,7 +76,7 @@
     font-size: 24px;
 }
 .card-img{
-//   background: black;
+
   width: 100%;
   overflow:hidden;
 
@@ -87,7 +84,7 @@
 .img{
     width: 100%;
     height: 100%;  
-    // border-radius: 5px;    
+
 }
 
 .card_body {
@@ -145,6 +142,11 @@
     }
     .service-content {
         grid-template-columns: 1fr;
-        // margin: 2rem auto;
+    }
+}
+
+@media all and (width:768px) {
+    .service-content {
+        grid-template-columns: repeat(2,1fr);
     }
 }

@@ -1,12 +1,11 @@
 .footer {
-    // display: none;
     line-height: 1.5;
     background-color: navy;
     .map-direction {
         padding: 2rem 0;
         text-align: center;
         width: 100%;
-        // background-color: gold;
+
     }
 
 }
@@ -17,14 +16,10 @@
     padding: 2rem 0;
     background-color: gold;
 }
-// .footer_service_list,.footer_pledge {
-//     border-right: 4px solid white;
-// }
 .footer_service_list,.footer_pledge,.footer_address {
  padding: 0 2rem;
 }
 .footer_service_list{
-    // text-align: center;
     h2 {
         font-size: 24px;
         text-transform: capitalize;
@@ -61,7 +56,6 @@
     a {
         display: block;
         text-decoration: none;
-        // padding: 10px 0;
         color: navy;
     }
     h4{
@@ -85,10 +79,10 @@
     h2,p {
         display: grid;
         justify-content: center;
-        // color: green;
         font-weight: bolder;
     }
-    p{
+    p{  
+        text-transform: capitalize;
         padding: 2rem 0;
         text-align: center;
     }
@@ -99,8 +93,7 @@
     margin-top: 2rem;
     color: navy;
     .copy {
-        // font-size: 16px;
-        // color: green;
+
         display: block;
         text-align: center;
     }

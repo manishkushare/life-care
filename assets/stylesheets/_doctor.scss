@@ -6,7 +6,7 @@
 .doctor-legend {
   display: grid;
   justify-content: center;
-  color: black;
+  color: navy;
   img {
     height: 200px;
     justify-self: center;
@@ -15,7 +15,6 @@
 
   }
   h2 {
-    // border-bottom: 2.5px solid green;
     padding-top: 2rem;
     border-bottom: 2.5px solid navy;
     padding-bottom: 2rem;
@@ -23,9 +22,9 @@
     text-transform: uppercase;
     font-weight: 700;
     justify-self: center;
-    color: navy;
   }
   p {
+    font-weight: 600;
     padding: 2rem 0;
     font-size: 1.25rem;
   }
@@ -37,7 +36,6 @@
   box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
   border-radius: 25px 25px 25px 25px;
   padding: 1.5rem;
-  // background-color: #eaeaea;
   background-color: navy;
   color: gold;
 
@@ -108,14 +106,12 @@
 .assistant-doctor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // height: 200px;
   grid-gap: 40px;
   padding: 2rem 0;
 }
 .assistant-doctor-col1,
 .assistant-doctor-col2 {
   box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
-  // background-color: #EAEAEA;
   background-color: navy;
   color: gold;
   padding:  2rem;
@@ -127,7 +123,6 @@
     width: 100%;
     display: grid;
     justify-content: center;
-    // border: 1px solid black;
     img {
       border-radius: 25px 25px 25px 25px;
       box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
