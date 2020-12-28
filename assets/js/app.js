@@ -1,4 +1,3 @@
-// const COLOR_BLACL = '#00000';?
 
 var bars= document.querySelector(".bars");
 var header = document.querySelector(".header");
@@ -17,12 +16,11 @@ function handleBars(event) {
     menu.style.display="block";
     let close = document.querySelector(".close-menu")
     close.style.display = "block";
-    document.querySelector(".marquee").style.display = "none";
     close.addEventListener("click", (event) => {
         close.style.display="none";
         menu.style.display = "none";
         document.querySelector(".fa-bars").style.display = "block"
-        document.querySelector(".marquee").style.display = "block";
+        // document.querySelector(".marquee").style.display = "block";
     })
 }
 
