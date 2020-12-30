@@ -19,8 +19,7 @@ function handleBars(event) {
     close.addEventListener("click", (event) => {
         close.style.display="none";
         menu.style.display = "none";
-        document.querySelector(".fa-bars").style.display = "block"
-        // document.querySelector(".marquee").style.display = "block";
+        document.querySelector(".fa-bars").style.display = "block";
     })
 }
 
@@ -30,7 +29,7 @@ function changeColor() {
         header.style.backgroundColor = "aqua"; 
     }
     else {
-        header.style.backgroundColor = "gold"
+        header.style.backgroundColor = "gold";
     }
  
 }

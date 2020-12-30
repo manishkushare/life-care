@@ -449,7 +449,7 @@ button {
 }
 
 .wrapper {
-  background-color: gold;
+  background-color: #F6F740;
   display: -ms-grid;
   display: grid;
   text-transform: capitalize;
@@ -469,7 +469,6 @@ button {
       justify-self: center;
   border-bottom: 5px solid navy;
   padding: 1.5rem;
-  color: navy;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 600;
@@ -514,7 +513,6 @@ button {
 .book-slot button {
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 1px solid wheat;
   color: navy;
   font-size: 1rem;
   font-weight: 600;
