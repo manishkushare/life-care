@@ -1,8 +1,6 @@
 
 .hero{
     background-image: linear-gradient(rgba(229, 211, 211, 0), rgb(37, 75, 180)) ,url(../media/hero-image-001.jpeg);
-    // background: url(../media/hero-image-001.jpeg);
-
     position: relative;
     background-repeat: no-repeat;
     background-size:contain;
@@ -41,13 +39,11 @@
     
 }
 .wrapper {
-    // background-color: gold;
-    background-color: #F6F740;
+    background-color: gold;
     display: grid;
     text-transform: capitalize;
     align-content: center;
     justify-content: center;
-    // color: navy;
     color: navy;
     box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
     border-radius: 25px 25px 25px 25px;
@@ -55,8 +51,6 @@
         justify-self: center;
         border-bottom: 5px solid navy;
         padding: 1.5rem;
-        // color: navy;
-        // color: navy;
         text-transform: uppercase;
         font-size: 1.4rem;
         font-weight: 600;
@@ -78,6 +72,7 @@
             justify-self: left;
         }
         h3{
+            text-transform: lowercase;
             justify-self: right;
         }
     }
