@@ -1413,7 +1413,7 @@ button {
 }
 
 .sticky-list a {
-  color: white;
+  color: white !important;
   background: rgba(0, 0, 0, 0.4);
   font-size: 1.25rem;
   font-weight: 600;
